@@ -19,14 +19,10 @@
 
                     <?php
                         // fetching course info
-                        $server = "localhost";
-                        $user = "root";
-                        $pass = "";
-                        $db_name = "mc";
                         $table_name = "course";
 
                         // Connection
-                        $conn = new mysqli($server  , $user , $pass , $db_name);
+                        require_once "php/db.inc.php";
 
                         $results = mysqli_query($conn , "SELECT id , course_title ,  instructor_name FROM `$table_name` ; ");
 

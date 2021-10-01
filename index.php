@@ -62,13 +62,11 @@
 
 
                         // Opening DB
-                        $server = "localhost";
-                        $user = "root";
-                        $pass = "";
-                        $db_name = "mc";
+                        require_once "php/db.inc.php";
+
+
                         $table_name = "admin";
                         
-                        $conn = new mysqli($server , $user , $pass , $db_name);
 
                         $result = mysqli_query($conn , "SELECT * FROM `$table_name` WHERE email = '$email' AND password = '$password';");
 

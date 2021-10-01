@@ -21,14 +21,12 @@
 
                     <?php
                         // fetching course info
-                        $server = "localhost";
-                        $user = "root";
-                        $pass = "";
-                        $db_name = "mc";
+                        
                         $table_name = "internship";
 
                         // Connection
-                        $conn = new mysqli($server  , $user , $pass , $db_name);
+                        require_once "php/db.inc.php";
+
 
                         $results = mysqli_query($conn , "SELECT internship_id , heading ,  company FROM `$table_name` WHERE internship_status = 'accept' ; ");
 

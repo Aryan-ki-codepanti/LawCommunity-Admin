@@ -21,14 +21,10 @@
 
                     <?php
                         // fetching course info
-                        $server = "localhost";
-                        $user = "root";
-                        $pass = "";
-                        $db_name = "mc";
                         $table_name = "event";
 
                         // Connection
-                        $conn = new mysqli($server  , $user , $pass , $db_name);
+                        require_once "php/db.inc.php";
 
                         $results = mysqli_query($conn , "SELECT event_id , event_heading , event_host  FROM `$table_name` WHERE event_status = 'accept'; ");
 

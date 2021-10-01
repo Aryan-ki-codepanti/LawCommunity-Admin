@@ -2,13 +2,10 @@
     include("header.php");
 
     // Connection to Database
-    $server = "localhost";
-    $user = "root";
-    $pass = "";
-    $db_name = "mc";
+    require_once "php/db.inc.php";
+
     $table_name = "event";
 
-    $conn = new mysqli($server , $user , $pass , $db_name);
 ?>
 
 <div class="container ps-5  py-5 login-container">

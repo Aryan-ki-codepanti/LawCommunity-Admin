@@ -66,6 +66,10 @@
 
 <?php
     if (isset($_POST["submit"])){
+        
+        // db
+        require_once "php/db.inc.php";
+
 
         $heading = $_POST["job-heading"];
         $companyName = $_POST["job-company-name"];
@@ -74,15 +78,7 @@
         $location = $_POST["job-location"];
         $description = addslashes($_POST["job-description"]);
 
-        // Connection to DB
-
-        $server = "localhost";
-        $user = "root";
-        $pass = "";
-        $db_name = "mc";
         $table_name = "job";
-
-        $conn = new mysqli($server , $user , $pass , $db_name );
 
         $query = "INSERT INTO `$table_name` ( `heading`, `company`, `date_posted`, `salary`, `location`, `description`, `job_status`) VALUES ( '$heading', '$companyName', '$datePosted', '$salary', '$location', '$description', 'accept'); " ;
 

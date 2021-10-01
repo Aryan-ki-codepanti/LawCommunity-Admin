@@ -63,7 +63,7 @@
                         <li class ="nav-item"><a  class="nav-link" href="approveBlog.php"> <i class="fas fa-clipboard"></i> Approval</li>
                         
                         <li class="nav-head"> Articles </li>
-                        <li class ="nav-item"><a  class="nav-link" href="#"> <i class="fas fa-plus-square"></i> Add Article </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="addArticle.php"> <i class="fas fa-plus-square"></i> Add Article </a></li>
                         <li class ="nav-item"><a  class="nav-link" href="#"> <i class="fas fa-trash"></i> Remove Article </a></li>
                         <li class ="nav-item"><a  class="nav-link" href="approveArticle.php"> <i class="fas fa-clipboard"></i> Approval</li>
                         

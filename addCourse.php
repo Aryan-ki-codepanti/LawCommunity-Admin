@@ -284,6 +284,9 @@
 
     if (isset($_POST["submit"])){
 
+        // db
+        require_once "php/db.inc.php";
+
         // General Section
         $courseTitle = $_POST["course-title"];
         $courseTeaserUrl = $_POST["course-teaser-url"];
@@ -346,14 +349,8 @@
         $feedbackUrl3 = $_POST["feedback-url3"];
 
         
-        // Connection to DB
-        $server = "localhost";
-        $user = "root";
-        $pass = "";
-        $db_name = "mc";
         $table_name = "course";
 
-        $conn = new mysqli($server , $user , $pass , $table_name);
 
         $query = "INSERT INTO `course` (`course_title`, `course_teaser_url`, `course_mrp`, `course_sp`, `course_day_duration`, `course_date_duration`, `instructor_name`, `instructor_post`, `instructor_desc1`, `instructor_desc2`, `instructor_desc3`, `instructor_pic1`, `instructor_pic2`, `instructor_pic3`, `module1`, `module2`, `module3`, `module4`, `module5`, `module6`, `module7`, `module8` , `flowchart_h1`, `flowchart_h2`, `flowchart_h3`, `flowchart_h4`, `flowchart_h5`, `flowchart_h6`, `feedback_url1`, `feedback_url2`, `feedback_url3`) VALUES ('$courseTitle', '$courseTeaserUrl', '$courseMrp', '$courseSp', '$courseDayDuration', '$courseDateDuration', '$instructorName', '$instructorPost', '$instructorDesc1', '$instructorDesc2', '$instructorDesc3', '$instructorPic1', '$instructorPic2', '$instructorPic3', '$module1', '$module2' , '$module3', '$module4', '$module5', '$module6', '$module7', '$module8', '$flowchartH1', '$flowchartH2', '$flowchartH3', '$flowchartH4', '$flowchartH5', '$flowchartH6', '$feedbackUrl1', '$feedbackUrl2' , '$feedbackUrl3');";
 

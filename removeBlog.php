@@ -21,14 +21,11 @@
 
                     <?php
                         // fetching course info
-                        $server = "localhost";
-                        $user = "root";
-                        $pass = "";
-                        $db_name = "mc";
+                        
                         $table_name = "blog";
 
                         // Connection
-                        $conn = new mysqli($server  , $user , $pass , $db_name);
+                        require_once "php/db.inc.php";
 
                         $results = mysqli_query($conn , "SELECT blog_id , blog_heading ,  blog_author FROM `$table_name` WHERE blog_status = 'accept'; ");
 

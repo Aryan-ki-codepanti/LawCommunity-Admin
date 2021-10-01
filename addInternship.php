@@ -76,6 +76,10 @@
 <?php
     if (isset($_POST["submit"])){
 
+        // db
+        require_once "php/db.inc.php";
+
+
         $heading = $_POST["internship-heading"];
         $companyName = $_POST["internship-company-name"];
         $datePosted = $_POST["internship-date-posted"];
@@ -85,15 +89,7 @@
         $openings = $_POST["internship-openings"];
         $description = addslashes($_POST["internship-description"]);
 
-        // Connection to DB
-
-        $server = "localhost";
-        $user = "root";
-        $pass = "";
-        $db_name = "mc";
         $table_name = "internship";
-
-        $conn = new mysqli($server , $user , $pass , $db_name);
 
         $query = "INSERT INTO `$table_name` (`heading`, `company`, `date_posted`, `stipend`, `location`, `description`, `openings`, `duration`,  `internship_status`) VALUES ( '$heading', '$companyName', '$datePosted', '$stipend', '$location', '$description', '$openings', '$duration' , 'accept'); " ;
 

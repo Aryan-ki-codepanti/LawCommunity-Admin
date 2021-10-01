@@ -93,6 +93,9 @@
 <?php
     if (isset($_POST["submit"])){
 
+        // db
+        require_once "php/db.inc.php";
+
         $heading = $_POST["event-heading"];
         $category = filter_input(INPUT_POST, 'category', FILTER_SANITIZE_STRING);
         $date = $_POST["event-date"];
@@ -108,15 +111,7 @@
         $uploadfileEvent = $uploaddir . basename($eventImage);
         move_uploaded_file($_FILES['event-image']['tmp_name'], $uploadfileEvent);
 
-        // Connection to DB
-
-        $server = "localhost";
-        $user = "root";
-        $pass = "";
-        $db_name = "mc";
         $table_name = "event";
-
-        $conn = new mysqli($server , $user , $pass , $db_name);
 
         $query = "INSERT INTO `$table_name` (`category`, `event_heading`, `event_date`, `event_venue`, `event_host`, `about_organiser`, `content`, `event_image` , `event_status`) VALUES ( '$category', '$heading', '$date', '$venue', '$host', '$aboutOrganiser', '$formLink', '$content', '$eventImage' , 'accept'); " ;
 

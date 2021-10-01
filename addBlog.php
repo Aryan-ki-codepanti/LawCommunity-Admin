@@ -70,6 +70,10 @@
 <?php
 
     if (isset($_POST["submit"])){
+
+        //db
+        require_once "php/db.inc.php";
+
         $title = $_POST["blog-title"];
         $heading = $_POST["blog-heading"];
         $datePosted = $_POST["blog-date-posted"];
@@ -87,14 +91,8 @@
         move_uploaded_file($_FILES['blog-image']['tmp_name'], $uploadfileBlog);
         move_uploaded_file($_FILES['blog-author-image']['tmp_name'], $uploadfileAuthor);
 
-        // Connection to Database
-        $server = "localhost";
-        $user = "root";
-        $pass = "";
-        $db_name = "mc";
         $table_name = "blog";
 
-        $conn = new mysqli($server , $user , $pass , $db_name);
         $query = "INSERT INTO `$table_name` ( `blog_heading`, `blog_status`, `blog_author`, `blog_title`, `blog_content`, `blog_image`, `author_image`, `date_posted`) VALUES ('$heading', 'accept', '$author', '$title', '$content', '$blogImage', '$authorImage', '$datePosted'); ";
 
         $insertion = mysqli_query($conn , $query);
