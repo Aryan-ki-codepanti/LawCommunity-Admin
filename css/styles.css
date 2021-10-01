@@ -1,0 +1,66 @@
+* {
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #020122;
+}
+
+.mb-3 label,
+.container h1 {
+    color: white;
+}
+
+.course-box,
+.login-box {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.container h3,
+.course-box label {
+    color: white;
+}
+
+.container h1 {
+    font-size: 4rem;
+}
+
+.course-module div input {
+    margin: 0.2rem 0;
+}
+
+.login-box {
+    width: 40%;
+    margin: 4rem auto;
+}
+
+.text-big {
+    font-size: 1.3rem;
+}
+
+.admin-submit-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+}
+
+table th {
+    font-size: 1.4rem;
+}
+
+.table-container {
+    margin: 3rem 0;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 13px;
+}
+
+.id-input {
+    width: 30rem;
+    flex: 1;
+}
