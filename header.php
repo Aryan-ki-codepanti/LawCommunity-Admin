@@ -84,6 +84,36 @@
                         <li class="nav-head"> Maxim </li>
                         <li class ="nav-item"><a  class="nav-link" href="addMaxim.php"> <i class="fas fa-plus-square"></i> Add Maxim </a></li>
                         <li class ="nav-item"><a  class="nav-link" href="removeMaxim.php"> <i class="fas fa-trash"></i> Remove Maxim </a></li>
+
+                        <li class="nav-head"> Legal Terms </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addLegalTerms.php"> <i class="fas fa-plus-square"></i> Add Legal Terms </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeLegalTerms.php"> <i class="fas fa-trash"></i> Remove Legal Terms </a></li>
+
+                        <li class="nav-head"> Judgements </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addJudgement.php"> <i class="fas fa-plus-square"></i> Add Judgement </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeJudgement.php"> <i class="fas fa-trash"></i> Remove Judgement </a></li>
+                        
+                        <li class="nav-head"> Policies & Amendments </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addPoliciesAmendments.php"> <i class="fas fa-plus-square"></i> Add Policy/Amendment </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeJudgement.php"> <i class="fas fa-trash"></i> Remove Policy/Amendment </a></li>
+                        
+                        
+                        <li class="nav-head"> Different Organisations </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addDifferentOrganisations.php"> <i class="fas fa-plus-square"></i> Add Organisation </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeDifferentOrganisations.php"> <i class="fas fa-trash"></i> Remove Organisation </a></li>
+                        
+                        
+                        <li class="nav-head"> Different Judges </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addDifferentJudges.php"> <i class="fas fa-plus-square"></i> Add Judge </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeDifferentJudges.php"> <i class="fas fa-trash"></i> Remove Judge </a></li>
+
+                        <li class="nav-head"> Legal Documents </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addLegalDocuments.php"> <i class="fas fa-plus-square"></i> Add Legal Document </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeLegalDocuments.php"> <i class="fas fa-trash"></i> Remove Legal Document </a></li>
+
+                        <li class="nav-head"> Others </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addOthers.php"> <i class="fas fa-plus-square"></i> Add Others </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeOthers.php"> <i class="fas fa-trash"></i> Remove Others </a></li>
                         
                         
                         <li class="logout-btn-box">  <a href="logout.php" class="btn btn-lg btn-outline-danger"> <i class="fas fa-sign-out-alt"></i> Logout </a> </li>
