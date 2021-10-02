@@ -77,6 +77,15 @@
                         <li class ="nav-item"><a  class="nav-link" href="removeEvent.php"> <i class="fas fa-trash"></i> Remove Event </a></li>
                         <li class ="nav-item"><a  class="nav-link" href="approveEvent.php"> <i class="fas fa-clipboard"></i> Approval</li>
                         
+                        <li class="nav-head"> Facts </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addFact.php"> <i class="fas fa-plus-square"></i> Add Fact </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeEvent.php"> <i class="fas fa-trash"></i> Remove Fact </a></li>
+                        
+                        <li class="nav-head"> Maxim </li>
+                        <li class ="nav-item"><a  class="nav-link" href="addMaxim.php"> <i class="fas fa-plus-square"></i> Add Maxim </a></li>
+                        <li class ="nav-item"><a  class="nav-link" href="removeMaxim.php"> <i class="fas fa-trash"></i> Remove Maxim </a></li>
+                        
+                        
                         <li class="logout-btn-box">  <a href="logout.php" class="btn btn-lg btn-outline-danger"> <i class="fas fa-sign-out-alt"></i> Logout </a> </li>
                     </ul>
                 </div>
